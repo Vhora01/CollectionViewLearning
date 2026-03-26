@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD2810642F73A5C100436513 /* CompositionalLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2810632F73A5C100436513 /* CompositionalLayoutVC.swift */; };
 		CDCD838629B370E400E84BB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCD838529B370E400E84BB2 /* AppDelegate.swift */; };
 		CDCD838829B370E400E84BB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCD838729B370E400E84BB2 /* SceneDelegate.swift */; };
 		CDCD838D29B370E400E84BB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCD838B29B370E400E84BB2 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD2810632F73A5C100436513 /* CompositionalLayoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutVC.swift; sourceTree = "<group>"; };
 		CDCD838229B370E400E84BB2 /* CollectionViewLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCD838529B370E400E84BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDCD838729B370E400E84BB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 			path = CustomCell;
 			sourceTree = "<group>";
 		};
+		CD2810622F73A59400436513 /* CompositionalLayoutView */ = {
+			isa = PBXGroup;
+			children = (
+				CD2810632F73A5C100436513 /* CompositionalLayoutVC.swift */,
+			);
+			path = CompositionalLayoutView;
+			sourceTree = "<group>";
+		};
 		CDCD837929B370E400E84BB2 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		CDCD838429B370E400E84BB2 /* CollectionViewLearning */ = {
 			isa = PBXGroup;
 			children = (
+				CD2810622F73A59400436513 /* CompositionalLayoutView */,
 				CD28105F2F731C2A00436513 /* CollectionViewLayout */,
 				CD28105A2F73170800436513 /* HomeVC */,
 				CD2810592F7316DC00436513 /* CustomCell */,
@@ -164,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2810642F73A5C100436513 /* CompositionalLayoutVC.swift in Sources */,
 				CDCD838629B370E400E84BB2 /* AppDelegate.swift in Sources */,
 				CDCD839B29B3729400E84BB2 /* CollectionViewCell.swift in Sources */,
 				CDCD838829B370E400E84BB2 /* SceneDelegate.swift in Sources */,
