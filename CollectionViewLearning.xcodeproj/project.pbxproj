@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CD2810642F73A5C100436513 /* CompositionalLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2810632F73A5C100436513 /* CompositionalLayoutVC.swift */; };
+		CD28106B2F756DFB00436513 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28106A2F756DFB00436513 /* ListViewController.swift */; };
+		CD28106E2F756E1B00436513 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD28106D2F756E1B00436513 /* ListCell.xib */; };
+		CD28106F2F756E1B00436513 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28106C2F756E1B00436513 /* ListCell.swift */; };
+		CD2810722F7580E700436513 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2810712F7580DE00436513 /* UIView+Extension.swift */; };
 		CDCD838629B370E400E84BB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCD838529B370E400E84BB2 /* AppDelegate.swift */; };
 		CDCD838829B370E400E84BB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCD838729B370E400E84BB2 /* SceneDelegate.swift */; };
 		CDCD838D29B370E400E84BB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCD838B29B370E400E84BB2 /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		CD2810632F73A5C100436513 /* CompositionalLayoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutVC.swift; sourceTree = "<group>"; };
+		CD28106A2F756DFB00436513 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		CD28106C2F756E1B00436513 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		CD28106D2F756E1B00436513 /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		CD2810712F7580DE00436513 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		CDCD838229B370E400E84BB2 /* CollectionViewLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCD838529B370E400E84BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDCD838729B370E400E84BB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +60,8 @@
 			children = (
 				CDCD839929B3729400E84BB2 /* CollectionViewCell.swift */,
 				CDCD839A29B3729400E84BB2 /* CollectionViewCell.xib */,
+				CD28106C2F756E1B00436513 /* ListCell.swift */,
+				CD28106D2F756E1B00436513 /* ListCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -62,6 +72,22 @@
 				CD2810632F73A5C100436513 /* CompositionalLayoutVC.swift */,
 			);
 			path = CompositionalLayoutView;
+			sourceTree = "<group>";
+		};
+		CD2810692F756DC800436513 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD28106A2F756DFB00436513 /* ListViewController.swift */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		CD2810702F7580D600436513 /* Extendions */ = {
+			isa = PBXGroup;
+			children = (
+				CD2810712F7580DE00436513 /* UIView+Extension.swift */,
+			);
+			path = Extendions;
 			sourceTree = "<group>";
 		};
 		CDCD837929B370E400E84BB2 = {
@@ -83,6 +109,8 @@
 		CDCD838429B370E400E84BB2 /* CollectionViewLearning */ = {
 			isa = PBXGroup;
 			children = (
+				CD2810702F7580D600436513 /* Extendions */,
+				CD2810692F756DC800436513 /* ListViewController */,
 				CD2810622F73A59400436513 /* CompositionalLayoutView */,
 				CD28105F2F731C2A00436513 /* CollectionViewLayout */,
 				CD28105A2F73170800436513 /* HomeVC */,
@@ -165,6 +193,7 @@
 				CDCD838F29B370E400E84BB2 /* Assets.xcassets in Resources */,
 				CDCD839C29B3729400E84BB2 /* CollectionViewCell.xib in Resources */,
 				CDCD838D29B370E400E84BB2 /* Main.storyboard in Resources */,
+				CD28106E2F756E1B00436513 /* ListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +207,9 @@
 				CD2810642F73A5C100436513 /* CompositionalLayoutVC.swift in Sources */,
 				CDCD838629B370E400E84BB2 /* AppDelegate.swift in Sources */,
 				CDCD839B29B3729400E84BB2 /* CollectionViewCell.swift in Sources */,
+				CD28106F2F756E1B00436513 /* ListCell.swift in Sources */,
+				CD28106B2F756DFB00436513 /* ListViewController.swift in Sources */,
+				CD2810722F7580E700436513 /* UIView+Extension.swift in Sources */,
 				CDCD838829B370E400E84BB2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

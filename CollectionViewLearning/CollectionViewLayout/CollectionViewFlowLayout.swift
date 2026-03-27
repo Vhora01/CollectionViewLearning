@@ -27,4 +27,24 @@ struct CollectionViewLayout {
         flowlayout.itemSize = CGSize(width: cellWidth, height: cellWidth)
         return flowlayout
     }
+    
+    static func asTableViewCellLayout(contentInSet:CGFloat,cellHeight:CGFloat)->UICollectionViewCompositionalLayout{
+        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
+        item.contentInsets = NSDirectionalEdgeInsets(top: contentInSet, leading: contentInSet, bottom: contentInSet, trailing: contentInSet)
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(cellHeight)), subitems: [item])
+        
+        let section = NSCollectionLayoutSection(group: group)
+        return UICollectionViewCompositionalLayout(section: section)
+    }
+    
+    static func twoColumnCell(contentInSet:CGFloat,cellHeight:CGFloat)->UICollectionViewCompositionalLayout{
+        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
+        item.contentInsets = NSDirectionalEdgeInsets(top: contentInSet, leading: contentInSet, bottom: contentInSet, trailing: contentInSet)
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(cellHeight)), subitems: [item])
+        
+        let section = NSCollectionLayoutSection(group: group)
+        return UICollectionViewCompositionalLayout(section: section)
+    }
 }
